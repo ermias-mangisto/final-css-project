@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:cursive;
+    background-image: linear-gradient(to bottom, #ffffff, #f8f2ff, #f6e3ff, #f9d3fd, #ffc2f5);
+}
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color:white;
+    width: 100%;
+    height: 10vh;
+align-items: center;
+border-bottom: solid 1px;
+
+}
+nav h1 ,a{
+    text-decoration: none;
+    color: tomato;
+width:40%;
+}
+#navBar{
+    display: flex;
+justify-content: space-evenly;
+width: 40%;
+
+}
+#navBar li {
+list-style-type: none;
+}
+#navBar a {
+    text-decoration: none;
+    color: tomato;
+    font-size: large;
+}
+#heroImage{
+    background-image: url(./media/Book-Club-image@4x.png);
+    background-size:100% 100%;
+   
+    width: 90vw;
+    height:80vh;
+    margin: auto;
+    position: relative;
+    margin-bottom: 50px;
+    }
+    #heroText{font-family: cursive;
+        position: absolute;
+        
+        font-weight: bolder;
+        font-size: 200%;
+        color: #141414;
+        text-shadow: rgb(236, 44, 10) 1px 1px 5px;
+        animation-name: comeIn;
+        animation-duration: 4s;
+        animation-timing-function: linear;
+        animation-iteration-count: 4;
+        animation-direction: alternate;
+    }
+    @keyframes comeIn{
+        0%{ }
+        100%{ transform: translateX(1000px);}
+    
+        
+    }
+
+    #inLink{
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        height: 10vh;
+        margin: auto;
+        list-style-type: none;
+        text-align: center;
+
+    }
+    #inLink li{
+width: 29%;
+    }
+    #searchClub{
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #searchClub article{
+        width: 45%;
+        font-family:cursive;
+    }
+    #search{
+        text-align: center;
+        display: flex;
+      
+        
+        
+    }
+    #searchBar{
+        width: 80%;
+        height: 40px;
+        outline: none;
+        text-align: center;
+        
+
+    }
+   .clubs{
+       display: flex;
+     flex-wrap: wrap;
+     width: 90%;
+     margin:auto;
+     justify-content: space-evenly;
+     margin-top: 50px;
+   }
+   .clubs h1{
+       width: 100%;
+     text-align: center;
+     text-decoration: underline;
+     margin-bottom: 15px;
+   }
+   .clubItem{
+       width: 25%;
+       text-align: center;
+       border-top: solid 1px ;
+       border-bottom: solid 1px;
+       border-radius: 10%;
+       transition: .5s;
+       padding: 5px;
+       padding-bottom: 15px;
+   }
+   .clubItem:hover{
+       border-top: solid 5px;
+       border-bottom: solid 5px;
+      width: 27%;
+   }
+  
+   .clubItem img{
+       width: 100%;
+       height: 80%;
+       clip-path: circle(45%);
+   }
+   footer{
+    background-color: lightcoral;
+    height: 10vh;
+    margin-top: 50px;
+}
+#clubForm{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-size: larger;
+    margin: auto;
+}
+#clubForm input{
+height: 30px;
+}
+#clubForm select{
+    height: 30px;
+
+}
+#clubForm button{
+    width: 50%;
+height: 35px;
+margin: auto;
+}
+#clubForm h1{
+    text-align: center;
+}
+@media screen and (max-width:768px){
+  #heroImage{
+      height: 40vh;
+  }
+  
+    .clubItem{
+        width: 100%;
+    }
+    
+    .clubItem:hover{
+        width: 110%;
+        
+    }
+   
+    #searchClub article{
+        width: 100%;
+    }
+    #heroText{
+        animation-duration: 1s;
+    }
+    @keyframes comeIn{
+        0%{ }
+        100%{ transform: translateX(80px);}
+    
+        
+    }
+}
+@media screen and (max-width:500px) {
+    nav h1 ,a{
+        
+    width:100%;
+    }
+    #navBar{
+      
+    width: 100%;
+    
+    }
+    
+        
+    
+    }
