@@ -37,7 +37,7 @@ list-style-type: none;
     font-size: large;
 }
 #heroImage{
-    background-image: url(./media/Book-Club-image@4x.png);
+    background-image: url(media/Book-Club-image@4x.png);
     background-size:100% 100%;
    
     width: 90vw;
